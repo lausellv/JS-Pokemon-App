@@ -29,10 +29,11 @@ body {
   /* sets the line height to 1.6 */
 }
 
-
-div{
-  margin:50px;
-  height: 400px;
+div {
+  padding-top: 100px;
+  max-width: 1024px;
+  min-height: 500px;
+  margin: 0 auto;
   width: 800px;
   display: flex;
   flex-direction: column;
@@ -41,6 +42,7 @@ div{
 }
 
 h1 {
+  color: #2b4653;
   font-family: "Montserrat", sans-serif;
   font-size: var(--font-size-h1);
   font-weight: var(--font-weight-h1-h2-h3);
@@ -49,7 +51,7 @@ h1 {
 .btn {
   background-color: #4caf50; /* Green */
   font-family: "Montserrat", sans-serif;
-  font-weight: 500;
+  font-weight: 700;
   border: none;
   color: white;
   padding: 16px 32px;
@@ -65,17 +67,40 @@ h1 {
   color: black;
   border: 2px solid #4caf50;
   width: 400px;
-  
-  }
+}
+
+.button--red { background-color: tomato; }
+.button--green { background-color: lightgreen; }
 
 li {
   list-style: none;
 }
 
-
 @media only screen and (max-width: 600px) {
   body {
     background-color: lightblue;
   }
-    
+
+  .btn {
+    width: 200px;
+  }
+}
+
+/* Tablet View */
+@media (max-width: 768px) {
+  div {
+    padding-top: 50px;
+  }
+
+  .btn {
+    margin-left: 0;
+  }
+}
+
+/* Mobile View */
+@media (max-width: 400px) {
+  div {
+    padding-top: none;
+    width: 100%;
+  }
 }
