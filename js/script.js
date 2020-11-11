@@ -140,7 +140,7 @@ pokemonRepository.addListItem(pokemon);
 
 // Selecting methods for the DOM
 
-
+renamed project DOM 1.6
 
 
 
