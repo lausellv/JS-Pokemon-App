@@ -73,7 +73,8 @@ button.addEventListener('click', function (event) {
   let target = event.target;
   target.classList.toggle('button--green');
   // shows the pokemon object to the console
-  showDetails(pokemon);
+  console.log(showDetails(pokemon));
+  alert('Name: ' + pokemon.name +' Type: ' +pokemon.type + ' Height: ' + pokemon.height);
   
 });
 
