@@ -56,6 +56,7 @@ function add(pokemon) {
   function showDetails(pokemon){
     console.log('Name: ' + pokemon.name +' Type: ' +pokemon.type + ' Height: ' + pokemon.height);
   }
+
   function addListItem(pokemon) {
     let pokemonIndex = document.querySelector(".pokemon-list");
     //creating the list item
@@ -75,7 +76,17 @@ button.addEventListener('click', function (event) {
   // shows the pokemon object to the console
   console.log(showDetails(pokemon));
   alert('Name: ' + pokemon.name +' Type: ' +pokemon.type + ' Height: ' + pokemon.height);
-  
+  //similar to react
+  // <div>
+  //   <title>{pokemon.name}</title>
+  //   <ul class="pokemon-list">
+  //     <li><p>my list item</p> <button>X</button></li>
+  //     <li><p>my list item</p> <button>X</button></li>
+  //   </ul>
+  //   <p>{pokemon.type}</p>
+  //   <img src={pokemon.img} />
+  //   <div>{pokemon.height}</div>
+  // </div>
 });
 
 
