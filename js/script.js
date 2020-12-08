@@ -96,7 +96,6 @@ button.addEventListener('click', function (event) {
     
     add: add,
     getAll: getAll,
-    // adding the function to the object returned from the IIFE so I will have it outside
     addListItem: addListItem,
   };
 
@@ -110,49 +109,13 @@ pokemonRepository.add(pokemon3);
 
 console.log(pokemonRepository.getAll());  // this returns the array in the console
 
-//this will 
 pokemonRepository.getAll().forEach(function (pokemon) {
-//   
-//all this code move inside de IIEM
 
-//assigning the ul element to pokemonIndex
-//   let pokemonIndex = document.querySelector(".pokemon-list");
-  
-//creating the list item
-//    let listpokemon = document.createElement("li");
-
-//creating the button, adding a class to it and appending the name to innerText
-//    let button = document.createElement("button");
-//    button.innerText = pokemon.name;
-//    button.classList.add("btn");
-
-//  appending the list and the button
-//    listpokemon.append(button);
-//     pokemonIndex.append(listpokemon);
-
-// this is how we call the function addlistItem inside the IIEM
 pokemonRepository.addListItem(pokemon);
 
 
 });
-// // Examining the document Object
-// //console.dir(document);
-// console.log(document.domain);
-// console.log(document.url);
-// console.log(document.title);
-// //document.title = "Pokemon App";
-// console.log(document.doctype);
-// console.log(document.head);
-// console.log(document.body);
-// console.log(document.all);
-// //console.log(document.all[13]);
-// //document.all[13].textContent = 'Hello, It\'s me, Victor!';
-// console.log(document.all[8]);
-// console.log(document.links);  // returns HTMLCollection { length: 0 } bc there are no links
 
-// Selecting methods for the DOM
-
-//renamed project DOM 1.6
 
 
 
