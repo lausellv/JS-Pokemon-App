@@ -73,6 +73,7 @@ li {
   list-style: none;
 }
 
+
 #modal-container {
   display: none;
 }
@@ -125,6 +126,7 @@ li {
 .modal p {
   margin-bottom: 0;
 }
+
 
 @media only screen and (max-width: 600px) {
   body {
