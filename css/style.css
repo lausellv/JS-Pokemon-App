@@ -31,7 +31,7 @@ body {
 
 div {
   padding-top: 100px;
-  max-width: 1024px;
+  max-width: inherit;
   min-height: 500px;
   margin: 0 auto;
   width: 800px;
