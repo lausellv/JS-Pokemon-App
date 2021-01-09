@@ -24,10 +24,11 @@ let pokemonRepository = (function () {
     let list = $(".pokemon-list");
     let listItem = $("<li></li>");
     let button = $("<button>" + pokemon.name + "</button>");
-    button.addClass("btn-primary");
+    button.addClass("btn btn-primary");
     button.attr("data-toggle", "modal"); //this works with bootstrap so the model opens when clicked
     button.attr("data-target", "#pokemonModal");
     listItem.append(button);
+    list.addClass("group-list-item");
     list.append(listItem);
 
     //event listener in clase someone clicks on a pokemon
