@@ -26,6 +26,7 @@ body {
   font-weight: var(--font-weight-body);
   font-size: var(--font-size-body);
   line-height: 1.6;
+  text-align: center;
   /* sets the line height to 1.6 */
 }
 
@@ -38,7 +39,7 @@ div {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  text-align: center;
+  text-align: inherit;
 }
 
 h1 {
@@ -78,16 +79,13 @@ li {
   display: none;
 }
 
+
 #modal-container.is-visible {
-  text-align: center;
-  position: fixed;
-  padding: 20px;
+  position: relative;
   box-sizing: border-box;
-  top: 60%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 60%;
-  /* background: rgba(0, 0, 0, 0.5); */
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.5);
   
   /* to show it above other content */
   z-index: 999; 
@@ -96,19 +94,17 @@ li {
   overflow: auto; 
   
   /* this is used to center the modal */
-  display: grid;
+  display: box;
   text-align: center;
+
+
 }
 
-.modal {
+.modal-body {
   margin: auto;
-  display: inline-block;
-  box-sizing: border-box;
-  background: #fff;
-  padding: 15px;
+  background: rgb(182, 221, 203);
+  font-size: 20px;
   width: 100%;
-  max-width: 400px;
-  text-align: center;
 }
 
 .modal-close {

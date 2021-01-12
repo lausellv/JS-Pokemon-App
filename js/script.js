@@ -2,6 +2,7 @@
 let pokemonRepository = (function () {
   let pokemonList = [];
   let apiUrl = 'https://pokeapi.co/api/v2/pokemon/?limit=100';
+  
 
   //add Pokemon to database
   function add(pokemon) {
@@ -39,7 +40,7 @@ let pokemonRepository = (function () {
   //Dislays pokemon details to modal 
 function showDetails(pokemon) {
   loadDetails(pokemon).then(function () {
-    showModal(pokemon)
+    showModal(pokemon);
   });
 }
 
@@ -87,7 +88,8 @@ function loadDetails(item) {
     item.imageUrl = details.sprites.front_default;
     item.height = details.height;
     item.weight = details.weight;
-    item.types = details.types;
+    item.types = details.types.map(function(object) {
+      return object.type.name;});
   }).catch(function (e) {
     console.error(e);
   });
@@ -95,18 +97,19 @@ function loadDetails(item) {
 
 //The functions below show the modal in the browser
 function showModal(pokemon) {
-
-  // empty the modal contents
-  // modalContainer.innerHTML = '';
+  modal = $('#modal-container').modal('show');
+  let modalDialog = $('#modalDialog'); // modal box that appears on top of the background
+  let modalContent = $('#modalContent');  // Wrap around the modal content
+  
 
   let modalBody = $(".modal-body");
   let modalTitle = $(".modal-title");
-  // let modalHeader = $(".modal-header");
+  let modalHeader = $(".modal-header");
 
   // clear contents 
-  modalTitle(empty);
-  modalBody(empty);
-  modalHeader(empty);
+  modalTitle.empty();
+  modalBody.empty();
+  modalHeader.empty();
 
 
   // creating and element for name in modal content
