@@ -1,0 +1,8 @@
+img/
+.atom-live-server.json
+/js/stylelint.config.js
+/js/tota11y.min.js
+/js/promise-polyfill.js
+/js/fetch-polyfill.js
+/css/normalize.css
+/node_modules
