@@ -113,7 +113,7 @@ function showModal(pokemon) {
 
 
 //creating a close button for header in modal
-let closeButton = $('<p>close</p>')
+closeButton = $('<p>close</p>').click(function(){$("modal-container").modal('hide');});
 
   // creating and element for name in modal content
   let nameElement = $("<h1>" + pokemon.name + "</h1>");
@@ -140,10 +140,7 @@ let closeButton = $('<p>close</p>')
 
 
 }
-function hideModal (){
-  
-  $("closeButton").click(function(){modal('hide');})
-}
+
 //
 
 // let modalContainer = document.querySelector("#modal-container");
