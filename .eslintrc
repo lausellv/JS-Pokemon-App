@@ -1,12 +1,28 @@
 {
-    "env": {	  "env": {
-        "es6": true,	    "es6": true,
-        "browser": true	    "browser": true
-    },	  },
-    "extends": [	  "extends": ["eslint:recommended"],
-        "eslint:recommended"	  "rules": {
-    ],	    "quotes": ["error", "single"],
-    "rules": {	    "no-console": ["error", { "allow": ["warn", "error"] }],
-        "quotes": ["error", "single"]	    "no-undef": [off, "jQuery"]
-    }	  }
-}	}
+    "env": {
+        "env": {
+            "es6": true,
+            "browser": true
+        },
+        "extends": [
+            "eslint:recommended"
+        ],
+        "rules": {
+            "no-console": [
+                "error",
+                {
+                    "allow": [
+                        "warn",
+                        "error"
+                    ]
+                }
+            ],
+            "quotes": [
+                "error",
+                "single"
+            ],
+            "no-undef": ["off",
+                "jQuery"]
+        }
+    }
+}
