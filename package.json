@@ -1,0 +1,28 @@
+{
+  "name": "JS-Pokemon-App",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lausellv/JS-1.5-Assignment-IIFE--1.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lausellv/JS-1.5-Assignment-IIFE--1/issues"
+  },
+  "homepage": "https://github.com/lausellv/JS-1.5-Assignment-IIFE--1#readme",
+  "devDependencies": {
+    "eslint": "^7.17.0",
+    "eslint-config-node": "^4.1.0",
+    "eslint-config-prettier": "^7.1.0",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-prettier": "^3.3.1",
+    "prettier": "^2.2.1"
+  }
+}
