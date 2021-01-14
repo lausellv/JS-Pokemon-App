@@ -57,6 +57,11 @@ h1 {
   width: 400px;
 }
 
+.btn-secondary {
+  margin: auto;
+  width: auto;
+}
+
 li {
   list-style: none;
 }
@@ -96,14 +101,24 @@ li {
   overflow: hidden;
 }
 
+.modal-dialog {
+  margin-top: 50px;
+}
+
 .modal-header {
   background: rgb(219, 211, 211);
   text-align: left;
+  border-bottom: none;
 }
 .modal-footer {
   background: rgb(219, 211, 211);
+  border-top: none;
+  widows: 100%;
 }
 
+.modal-title {
+  width: 100%;
+}
 
 .modal h1 {
   margin-left: 8%;
@@ -137,9 +152,9 @@ li {
 
 /* Tablet View */
 @media (max-width: 768px) {
-  div {
+  /* div {
     padding-top: 50px;
-  }
+  } */
 
   .btn {
     margin-left: 0;

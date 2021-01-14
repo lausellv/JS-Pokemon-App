@@ -91,7 +91,7 @@ function loadDetails(item) {
     return response.json();
   }).then(function (details) {
     //now we add the details to the item
-    item.imageUrl = details.sprites.front_default;
+    item.imageUrl = details.sprites.other.dream_world.front_default;
     item.height = details.height;
     item.weight = details.weight;
     item.types = details.types.map(function(object) {
