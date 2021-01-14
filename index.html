@@ -15,6 +15,63 @@
     <link href="css/style.css" rel="stylesheet" type="text/css" />
   </head>
   <body>
+    <nav
+      class="navbar navbar-expand-sm fixed-top navbar-dark"
+      style="background-color: #606060"
+    >
+      <a class="navbar-brand" href="index.html">
+        <img
+          src="img/Pókemon.png"
+          width="30"
+          height="30"
+          class="d-inline-block align-top"
+          alt="pokemon logo"
+        />
+        Pokédex
+      </a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="index.html"
+              >Home <span class="sr-only">(current)</span></a
+            >
+          </li>
+          <li class="nav-item">
+            <a
+              class="nav-link"
+              href="https://github.com/lausellv/JS-Pokemon-App.git"
+              target="_blank"
+              >Source Code</a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://lausellv.github.io/CF-WebSite/index.html" target="_blank">About</a>
+          </li>
+        </ul>
+        <form class="form-inline my-2 my-lg-0">
+          <input
+            id="myInput"
+            onkeyup="search()"
+            class="form-control mr-sm-2"
+            type="search"
+            placeholder="Search"
+            aria-label="Search"
+          />
+        </form>
+      </div>
+    </nav>
     <div>
       <h1 class="display-4 text-center">Pokédex</h1>
     </div>

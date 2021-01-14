@@ -119,7 +119,7 @@ closeButton = $('<p>close</p>').click(function(){$("modal-container").modal('hid
   let nameElement = $("<h1>" + pokemon.name + "</h1>");
   //creating img in modal content
   let imageElementFront = $("<img>");
-  imageElementFront.attr("src", pokemon.imageUrl);
+  imageElementFront.attr("src", pokemon.imageUrl).addClass('my-imgage');
   //creating an element for height in modal content
   let heightElement = $('<p>' + 'height: ' + pokemon.height + '</p>');
   // creating an elelent for weight in modal content
@@ -131,8 +131,8 @@ closeButton = $('<p>close</p>').click(function(){$("modal-container").modal('hid
   // modal.classList.add('modal');
 
   // Add the new modal content
+  modalHeader.append(nameElement);
   modalHeader.append(closeButton);
-  modalBody.append(nameElement);
   modalBody.append(imageElementFront);
   modalBody.append(heightElement);
   modalBody.append(weightElement);
@@ -141,6 +141,10 @@ closeButton = $('<p>close</p>').click(function(){$("modal-container").modal('hid
 
 }
 
+
+// function hideModal {
+
+// }
 //
 
 // let modalContainer = document.querySelector("#modal-container");
@@ -190,6 +194,7 @@ return {
   loadDetails: loadDetails,
   showDetails: showDetails,
   showModal: showModal
+  //hideModal:hideModal
 
 };
 
