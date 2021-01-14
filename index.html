@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="shortcut icon" href="img/favicon-32x32.png">
     <title>Pokédex</title>
     <link
       rel="stylesheet"
@@ -21,7 +22,7 @@
     >
       <a class="navbar-brand" href="index.html">
         <img
-          src="img/Pókemon.png"
+          src="img/pokemon-go-icon-1.jpg"
           width="30"
           height="30"
           class="d-inline-block align-top"
@@ -45,7 +46,7 @@
         <ul class="navbar-nav mr-auto">
           <li class="nav-item active">
             <a class="nav-link" href="index.html"
-              >Home <span class="sr-only">(current)</span></a
+              >Home <span class="sr-only"></span></a
             >
           </li>
           <li class="nav-item">
@@ -57,22 +58,12 @@
             >
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="https://lausellv.github.io/CF-WebSite/index.html" target="_blank">About</a>
+            <a class="nav-link" href="about.html" target="_blank">About</a>
           </li>
         </ul>
-        <form class="form-inline my-2 my-lg-0">
-          <input
-            id="myInput"
-            onkeyup="search()"
-            class="form-control mr-sm-2"
-            type="search"
-            placeholder="Search"
-            aria-label="Search"
-          />
-        </form>
       </div>
     </nav>
-    <div>
+    <div class="container page-container">
       <h1 class="display-4 text-center">Pokédex</h1>
     </div>
       <!-- creating the list of pokemon from the scrpts.js -->
@@ -95,6 +86,15 @@
         </div>
         <!-- modal body  -->
         <div class="modal-body">This is the body of the modal</div>
+         <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-dismiss="modal"
+            >
+              Close
+            </button>
+            </div>
       </div>
       </div>
     </div>
