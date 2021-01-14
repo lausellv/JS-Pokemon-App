@@ -19,17 +19,23 @@ let pokemonRepository = (function () {
     return pokemonList;
   }
 
-  //this function adds a list item to th liest for each pokemon
+  //this function adds a list item to th list for each pokemon
   function addListItem(pokemon) {
 
     let list = $(".pokemon-list");
     let listItem = $("<li></li>");
     let button = $("<button>" + pokemon.name + "</button>");
+//trying to add an img to the button
+    let image = $('<img class="pokemon-icon" alt="button image" />');
+    image.attr('src', pokemon.imageUrl);
+  
+  
     button.addClass("btn btn-primary");
     button.attr("data-toggle", "modal"); //this works with bootstrap so the model opens when clicked
     button.attr("data-target", "#pokemonModal");
+    // button.append(image);
+    button.add();
     listItem.append(button);
-    list.addClass("group-list-item");
     list.append(listItem);
 
     //event listener in clase someone clicks on a pokemon
@@ -104,16 +110,15 @@ function showModal(pokemon) {
 
   let modalBody = $(".modal-body");
   let modalTitle = $(".modal-title");
-  let modalHeader = $(".modal-header");
+  // let modalHeader = $(".modal-header");
 
   // clear contents 
   modalTitle.empty();
   modalBody.empty();
-  modalHeader.empty();
+  
 
 
-//creating a close button for header in modal
-closeButton = $('<p>close</p>').click(function(){$("modal-container").modal('hide');});
+
 
   // creating and element for name in modal content
   let nameElement = $("<h1>" + pokemon.name + "</h1>");
@@ -131,8 +136,9 @@ closeButton = $('<p>close</p>').click(function(){$("modal-container").modal('hid
   // modal.classList.add('modal');
 
   // Add the new modal content
-  modalHeader.append(closeButton);
-  modalBody.append(nameElement);
+  // modalHeader.append(nameElement);
+  modalTitle.append(nameElement);
+ 
   modalBody.append(imageElementFront);
   modalBody.append(heightElement);
   modalBody.append(weightElement);
@@ -141,6 +147,10 @@ closeButton = $('<p>close</p>').click(function(){$("modal-container").modal('hid
 
 }
 
+
+// function hideModal {
+
+// }
 //
 
 // let modalContainer = document.querySelector("#modal-container");
@@ -190,6 +200,7 @@ return {
   loadDetails: loadDetails,
   showDetails: showDetails,
   showModal: showModal
+  //hideModal:hideModal
 
 };
 

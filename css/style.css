@@ -17,7 +17,7 @@
 }
 
 body {
-  background-color: rgb(188, 235, 227);
+  background-color: rgb(209, 255, 247);
   font-family: 'Inconsolata', monospace;
   font-weight: var(--font-weight-body);
   font-size: var(--font-size-body);
@@ -61,6 +61,10 @@ li {
   list-style: none;
 }
 
+.page-container {
+  margin-top: 80px;
+}
+
 #modal-container {
   display: none;
 }
@@ -93,18 +97,13 @@ li {
 }
 
 .modal-header {
-  background: lawngreen;
+  background: rgb(219, 211, 211);
   text-align: center;
 }
-
-.modal-close {
-  float: right;
-  -webkit-appearance: none;
-  border: 0;
-  background: none;
-  color: #777;
-  text-decoration: underline;
+.modal-footer {
+  background: rgb(219, 211, 211);
 }
+
 
 .modal h1 {
   margin-left: 8%;
