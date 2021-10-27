@@ -19,7 +19,7 @@ Integrating a Bootstrap framework instead of using pure CSS.
 
 By using the index.html file. Tested on Crome , Brave and Firefox.
 
-# Project, Environment, Setup and Dependencies
+# Setup and Dependencies
 
     "Bootstrap Ver 4.5.0",
     "eslint": "^7.17.0",
@@ -29,7 +29,7 @@ By using the index.html file. Tested on Crome , Brave and Firefox.
     "eslint-plugin-prettier": "^3.3.1",
     "prettier": "^2.2.1"
 
-# Environments
+# Environment
   - VS Code:  v1.61.2
   - npm v7.24.1
   - Node.js v14.15.4
